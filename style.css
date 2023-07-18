@@ -5,11 +5,19 @@
   --highlight-text: #64ffda;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   background-color: var(--main-bg-color);
   color: var(--text-color);
   font-family: "NTR", sans-serif;
-  line-height: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
 }
 
 .container {
