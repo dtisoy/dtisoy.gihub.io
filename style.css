@@ -2,6 +2,7 @@
 * {
   --main-bg-color: rgb(10, 25, 47);
   --text-color: rgb(136, 146, 176);
+  --highlight-bg-color: #20979d;
   --highlight-text: #64ffda;
 }
 
@@ -93,4 +94,46 @@ body {
   border-radius: 5px;
   font-weight: bold;
   margin-top: 2rem;
+}
+
+/* projects section */
+
+.h2-section {
+  font-size: 3.3rem;
+  color: var(--highlight-text);
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.card-item {
+  list-style-type: none;
+}
+
+.project-card {
+  margin: 0;
+  max-width: 40rem;
+  max-height: 42rem;
+  background-color: var(--highlight-bg-color);
+  color: white;
+  border-radius: 1rem;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  max-height: 37rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.card-description {
+  font-size: 2.5rem;
+  text-align: center;
 }
