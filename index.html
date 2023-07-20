@@ -8,6 +8,12 @@
     <meta name="author" content="dtisoy" />
     <title>Daniel Tisoy portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -20,20 +26,17 @@
     </nav>
     <main class="container">
       <section class="intro" id="welcome-section">
-        <!-- TODO: link with a #profile-link to github or freecodecamp profile-->
         <div class="intro-desc">
           <h1>Hi, <span>Daniel</span> Here</h1>
           <p>Trying to build something cool through code</p>
           <button>Say hi :)</button>
         </div>
       </section>
-      <!-- TODO: #projects has at least one element with .project-tile -->
-      <!-- TODO: .project has at least one link to a project -->
       <section class="projects" id="projects">
         <h2 class="h2-section">These are some of my projects</h2>
-        <ul class="card-list">
-          <li class="card-item">
-            <figure class="project-card">
+        <ul class="list-flex">
+          <li class="project-tile">
+            <figure class="project-card no-proy-link">
               <img
                 class="card-image"
                 src="img/survey-form.jpg"
@@ -43,46 +46,97 @@
               <figcaption class="card-description">Survey form</figcaption>
             </figure>
           </li>
-          <li class="card-item">
-            <figure class="project-card">
-              <img
-                class="card-image"
-                src="img/tribute-page.jpg"
-                alt="tribute page project"
-                loading="lazy"
-              />
-              <figcaption class="card-description">Tribute Page</figcaption>
-            </figure>
+          <li class="project-tile">
+            <a
+              target="_blank"
+              href="https://dtisoy.github.io/tribute-page"
+              class="project-link"
+            >
+              <figure class="project-card">
+                <img
+                  class="card-image"
+                  src="img/tribute-page.jpg"
+                  alt="tribute page project"
+                  loading="lazy"
+                />
+                <figcaption class="card-description">Tribute Page</figcaption>
+              </figure>
+            </a>
           </li>
-          <li class="card-item">
-            <figure class="project-card">
-              <img
-                class="card-image"
-                src="img/technical-doc.jpg"
-                alt="technical documentation page project"
-                loading="lazy"
-              />
-              <figcaption class="card-description">
-                technical documentation
-              </figcaption>
-            </figure>
+          <li class="project-tile">
+            <a
+              target="_blank"
+              href="https://dtisoy.github.io/technical-docs-page/"
+              class="project-link"
+            >
+              <figure class="project-card">
+                <img
+                  class="card-image"
+                  src="img/technical-doc.jpg"
+                  alt="technical documentation page project"
+                  loading="lazy"
+                />
+                <figcaption class="card-description">
+                  technical documentation
+                </figcaption>
+              </figure>
+            </a>
           </li>
-          <li class="card-item">
-            <figure class="project-card">
-              <img
-                class="card-image"
-                src="img/landing-page.jpg"
-                alt="product landing page project"
-                loading="lazy"
-              />
-              <figcaption class="card-description">
-                Product landing page
-              </figcaption>
-            </figure>
+          <li class="project-tile">
+            <a
+              target="_blank"
+              class="project-link"
+              href="https://dtisoy.github.io/product-landing-page/"
+            >
+              <figure class="project-card">
+                <img
+                  class="card-image"
+                  src="img/landing-page.jpg"
+                  alt="product landing page project"
+                  loading="lazy"
+                />
+                <figcaption class="card-description">
+                  Product landing page
+                </figcaption>
+              </figure>
+            </a>
           </li>
         </ul>
       </section>
-      <section class="contact" id="contact"></section>
+      <section class="contact" id="contact">
+        <!-- TODO: link with a #profile-link to github or freecodecamp profile-->
+        <h2 class="h2-section h2-bigger">let's work together</h2>
+        <ul class="list section-li list-flex">
+          <li>
+            <a href="https://github.com/dtisoy" id="github-link" target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/dtisoy_" target="_blank"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+          </li>
+          <li>
+            <a href="mailto:danieltisoy2001@gmail.com" target="_blank">
+              <i class="fas fa-at"></i> Send a email
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/dtisoy"
+              id="profile-link"
+              target="_blank"
+              ><i class="fab fa-free-code-camp"></i> FreeCodeCamp profile
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/dtisoy" target="_blank"
+              ><i class="fab fa-telegram"></i> Telegram chat</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
