@@ -178,3 +178,55 @@ body {
 }
 
 /* media queries */
+@media (max-width: 900px) {
+  .section-li {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .navbar {
+    background-color: var(--highlight-bg-color);
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 4.4rem;
+  }
+
+  .intro p {
+    font-size: 2rem;
+  }
+
+  .intro-desc button {
+    font-size: 2rem;
+  }
+
+  .projects {
+    padding-top: 51px;
+  }
+
+  .projects .list-flex {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .h2-bigger {
+    font-size: 3.3rem;
+  }
+
+  .section-li a {
+    font-size: 2.2rem;
+  }
+
+  .contact {
+    justify-content: center;
+    height: 100vh;
+  }
+}
