@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=NTR&display=swap");
 * {
-  --main-bg-color: rgb(10, 25, 47);
-  --highlight-bg-color: #1a407a;
-  --text-color: rgb(136, 146, 176);
-  --highlight-text: #64ffda;
+  --bg-color: #1e1e1e;
+  --main-color: #007acc;
+  --caret-color: #569cd6;
+  --sub-color: #4d4d4d;
+  --sub-alt-color: #191919;
+  --text-color: #d4d4d4;
 }
 
 html {
@@ -14,7 +16,7 @@ html {
 
 /*TODO: add at leas one media querie*/
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "NTR", sans-serif;
   padding: 0;
@@ -28,8 +30,10 @@ body {
   margin: auto;
   height: fit-content;
   position: fixed;
+  z-index: 3;
   left: 0;
   right: 0;
+  background-color: var(--sub-alt-color);
 }
 
 .navbar .list {
@@ -47,7 +51,11 @@ body {
 
 .list a {
   text-decoration: none;
-  color: var(--highlight-text);
+  color: var(--sub-color);
+}
+
+.list a:hover {
+  color: var(--caret-color);
 }
 
 /*Welcome section */
@@ -70,7 +78,7 @@ body {
   animation: scale-in-hor-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .intro h1 > span {
-  color: var(--highlight-text);
+  color: var(--main-color);
 }
 
 .intro p {
@@ -90,8 +98,8 @@ body {
 .intro-desc button {
   height: fit-content;
   background-color: transparent;
-  color: var(--highlight-text);
-  border: 2px solid var(--highlight-text);
+  color: var(--text-color);
+  border: 2px solid var(--main-color);
   font-size: 3rem;
   width: fit-content;
   padding: 1.2rem;
@@ -104,7 +112,7 @@ body {
 
 .h2-section {
   font-size: 3.3rem;
-  color: var(--highlight-text);
+  color: var(--main-color);
   text-align: center;
 }
 
@@ -133,8 +141,7 @@ body {
   margin: 0;
   max-width: 40rem;
   max-height: 42rem;
-  background-color: var(--highlight-bg-color);
-  color: white;
+  background-color: var(--caret-color);
   border-radius: 1rem;
 }
 
@@ -149,6 +156,7 @@ body {
 .card-description {
   font-size: 2.5rem;
   text-align: center;
+  color: var(--sub-alt-color);
 }
 
 /* contact section */
@@ -188,7 +196,7 @@ body {
   }
 
   .navbar {
-    background-color: var(--highlight-bg-color);
+    background-color: var(--sub-alt-color);
   }
 }
 
